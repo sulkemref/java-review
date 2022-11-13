@@ -1,0 +1,137 @@
+Java Programming Week11
+
+Review Topics: Inheritance
+               Method Overriding
+
+package name: week11_review
+
+
+Inheritance: building IS A relationship between classes (super & sub or parent & child)
+
+        child class (sub): inherits all the variables & methods (visible) from the parent class
+
+                    Constructor can not be inherited
+
+        parent class (super): can not inherit anything from child. contain all the common variables and methods that are meant t be inherited to ALL the child classes
+
+        Advantages:
+            less codes
+            less memory usage
+            clean codes
+            reusability
+            easy to maintain
+
+
+this: refers to the instances. current class
+    this. : calls instance variables or instance methods
+    this(): calls the constructor
+
+super: refers to the instances, parent class
+    super.  : calls instance variables or instance methods
+    super() : calls the constructor
+
+
+Method Overriding: giving different implementations to the method
+                    
+                   MUST happen in child class
+
+                   return-type, parameters, method name need to be same
+
+                   Access moodifier must be same or more visible
+
+
+Inheritance Practice Task:
+    1. Create a class named Person:
+            Variables:
+                name, age, gender
+
+            Encapsulate all the fields
+                restrictions for the fields:
+                    name can not be empty
+                    name can not be null
+                    age can not be negative
+                    age can not be zero
+
+            Add a constructor to set all the fields
+                (Make sure all the restrictions are applied)
+
+            Methods:
+                eat()
+                drink()
+                sleep()
+                toString()
+
+
+    2. Create a sub-class of Person named Employee:
+
+            Extra variables:
+                employeeId (String), jobTitle, salary
+
+            Encapsulate all the fields
+                restrictions for the fields:
+                    job title can not be empty
+                    job title can not be null
+                    salary can not be negative
+                    salary can not be zero
+                    employee id can not start with the character '0'
+
+            Add a constructor to set all the fields
+                (Make sure all the restrictions are applied)
+
+            Methods:
+                work()
+                toString()
+
+
+    3. Create a sub-class of Person named Student
+            Extra variables:
+                studentId, fieldOfStudy, schoolName, grade
+
+            Encapsulate all the fields
+                restrictions:
+                    fieldOfStudy can not 
+
+            Add a constructor to set all the fields
+
+            Encapsulate all the fields
+
+            Methods:
+                study()
+                toString()
+
+
+    4. Create the following sub-classes of Employee and override the work method:
+
+            4.1 Tester:
+                    additional methods:
+                        smokeTesting()
+
+            4.2 Developer:
+                    additional methods:
+                        unitTesting()
+
+            4.3 Teacher
+
+            4.4 Janitor
+
+    5. Create the following sub-classes of Student and override the study method
+
+            5.1 GraduateStudent
+
+            5.2 UnderGraduateStudent
+
+            5.3 CydeoStudent
+                    Additional Variables:
+                        batchNum, groupName, progLanguage
+
+                        Encapsulate all the fields
+                            restrictions for the fields:
+                                batch number can not be zero or negative
+                                groupName can not be empty or null
+                                groupName can not start with a digit or special characters
+                                progLanguage must be set to one of the followings:
+                                    {"Java", "Python", "JavaScript"}
+
+                    Override the toString method to make sure that batchNum, groupName, progLanguage are included when the object of CydeoStudent is printed
+'java'
+ ===> Java
