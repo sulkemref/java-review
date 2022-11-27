@@ -1,0 +1,65 @@
+Java Programming Week14
+
+Review Topics: Exception Handling
+               Collection
+               Map
+
+package name: week14_review
+
+Exception: Issue within source code. (Checked or unchecked)
+    
+Exception handlings:
+        
+        checked exceptions: try & catch  or throws keyword
+
+        unchecked: try & catch
+
+
+        try & catch:
+
+                try{
+
+
+                }catch(SateleElementException e){
+
+                }catch(WebDriverException e){
+
+                }catch(RuntimeException e){
+
+                }finaly{
+                    disconnect()
+                }
+
+
+
+finally vs final vs finalize
+
+NullPointerException
+FIleNotFoundException
+
+
+
+
+Collection:
+    
+    List:
+        ArrayList
+
+    Set
+
+
+List<WebElements>
+
+Set<String>
+
+Set<WebELements>
+
+
+Maps:
+
+
+
+
+
+
+
