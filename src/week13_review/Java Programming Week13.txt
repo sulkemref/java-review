@@ -1,0 +1,166 @@
+Java Programming Week13
+
+Review Topics: OOP Polymoprhism
+               Reference Type castings
+               OOP Principles Summary
+
+package name: week13_review
+
+
+OOP Principles:
+    
+    1. Encapsulation: hiding the data
+
+                     to have complete control over the filed
+
+    2. Inheritance: IS A relation (parent/child  or super/sub)
+
+                    To Inherit the common variables and methods from one class 
+
+                    Easiest way to get rich
+
+    3. Abstraction: hiding the implementation details
+
+                Ignore the details, focus on essentials
+
+                How it's done is not important
+
+    4. Polymorphism: Ability of the objects to take on many forms
+
+                    Use one reference variable to reference to multiple objects of different type
+                            (parent type)                               (child)     
+
+                    Parent type decides what's accessible through the reference variable       
+
+Reference Type Castings:
+        
+        up-casting: casting smaller to larger type (implicitly done)
+
+        down casting: casting larger to smaller type
+
+
+
+
+
+without polymoprhism:
+    
+    chromeDriver
+
+    firefoxDriver
+
+    operaDriver
+
+    safariDriver
+
+    ....
+
+
+with Polymorphism:
+    
+   WebDriver driver = new EdgeDriver();
+
+
+
+
+
+
+
+
+
+
+
+
+
+Employee Task:
+    
+    Create the following classes:
+
+        Employee:
+
+            Common variables:  name, age, gender, id, jobTitle, salary
+            common methods: work(), toString()
+
+        RemoteJob:
+            workFromHome()
+
+        Tester:
+            Attributes:
+                name, age, gender, id, jobTitle, salary
+
+                Restrictions:
+                    age can not be 0 or negative
+                    salary can not be zero or negative
+
+            Actions:
+                work(), toString(), workFromHome()
+
+        Developer:
+            Attributes:
+                name, age, gender, id, jobTitle, salary
+
+                Restrictions:
+                    age can not be 0 or negative
+                    salary can not be zero or negative
+
+            Actions:
+                work(), toString(), workFromHome()
+
+        Teacher:
+            Attributes:
+                name, age, gender, id, jobTitle, salary
+
+                Restrictions:
+                    age can not be 0 or negative
+                    salary can not be zero or negative
+
+            Actions:
+                work(), toString(), workFromHome()
+
+        Driver:
+            Attributes:
+                name, age, gender, id, jobTitle, salary, typeOfDL
+
+                Restrictions:
+                    age can not be 0 or negative
+                    salary can not be zero or negative
+                    typeOfDL can ONLY be 'A' or 'B' or 'C'
+            Actions:
+                work(), toString()
+
+        Janitor:
+            Attributes:
+                name, age, gender, id, jobTitle, salary
+
+                Restrictions:
+                    age can not be 0 or negative
+                    salary can not be zero or negative
+
+            Actions:
+                work(), toString()
+
+
+    Create a class named TestEmployeeObjects
+
+            Create a variable named employee:
+                    Assign the Tester Object
+                    Call all the methods of tester object
+
+                    Assign the Developer Object
+                    Call all the methods of developer object
+
+                    Assign the Teacher Object
+                    Call all the methods of teacher object
+
+                    Assign the Driver Object
+                    Call all the methods of driver object
+
+                    Assign the Janitor Object
+                    Call all the methods of janitor object
+
+
+
+
+
+
+
+
